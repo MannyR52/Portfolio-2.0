@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.about-me,
+.skills,
+.my-best {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6F0F6;
+    box-shadow: 3px 3px #B9C9D2;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 20px;
+    max-width: 900px;
+}
+
+.about-me h2,
+.about-me p {
+    color: #58656D;
+}
+
+.my-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-links a {
+    text-decoration: none;
+    background-color: #23292C;
+    color: #B9C9D2;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #465157;
+    box-shadow: 3px 3px #23292C;
+    margin: 15px;
+    min-height: 200px;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 4px;
+}
+
+.card h2 {
+    color: white;
+    text-align: center;
+}
+
+.card ul,
+.list-container ul {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #58656D;
+    list-style-position: inside;
+    color: white;
+    border-radius: 8px;
+}
+
+.list-container p{
+    color: #58656D;
+}
