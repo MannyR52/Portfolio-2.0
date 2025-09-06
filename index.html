@@ -26,6 +26,7 @@
         </div>
     </header>
     <main>
+        <!-- Section 1 SKILLS -->
         <section class="skills">
         <h1>What I Use The Most</h1>
             <div class="skills-list">
@@ -63,8 +64,51 @@
             </div>
         </section>
 
+        <!-- Section 2 PROJECTS -->
         <section class="projects">
             <h1>What I've Worked On</h1>
+            <div class="projects-list">
+                <!-- Project card 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Web Security App</h3>
+                        <span class="toggle-btn">+</span>
+                    </div>
+                    <div class="project-details">
+                        <h4>Built with: PHP, HTML, CSS, JavaScript</h4>
+                        <p>Description: An interactive application designed to teach users about common web application vulnerabilities and how to patch them.</p>
+                        <div class="project-screenshots">
+                            <img src="./resources/WebSec.PNG" alt="Screenshot of Web Security App Homepage">
+                        </div>
+                        <p><a href="./resources/ProjectPoster.pdf" target="_blank">View Project Poster</a></p>
+                        <a href="" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+                <!-- Project card 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Winery Database App</h3>
+                        <span class="toggle-btn">+</span>
+                    </div>
+                    <div class="project-details">
+                        <h4>Built with: Python, Flask, HTML, CSS, SQL</h4>
+                        <p>Description: An application designed to serve as the administrator portal for a winery's inventory and sales management.</p>
+                        <a href="" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+                <!-- Project card 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Fitness Dashboard App</h3>
+                        <span class="toggle-btn">+</span>
+                    </div>
+                    <div class="project-details">
+                        <h4>Built with: Python, Flask, HTML, CSS, SQL</h4>
+                        <p>Description: A fitness application focused around microservices architecture and RESTful APIs.</p>
+                        <a href="" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
@@ -73,6 +117,19 @@
 
         </section>
     </main>
-    
+    <script>
+        const cards = document.querySelectorAll('.project-card');
+
+        cards.forEach(card => {
+            const toggleBtn = card.querySelector('.toggle-btn');
+            const details = card.querySelector('.project-details');
+
+            toggleBtn.addEventListener('click', () => {
+                const isOpen = details.style.display === 'block';
+                details.style.display = isOpen ? 'none' : 'block';
+                toggleBtn.textContent = isOpen ? '+' : '-';
+            });
+        });
+    </script>
 </body>
 </html>
