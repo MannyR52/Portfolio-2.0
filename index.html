@@ -68,6 +68,7 @@
         <section class="projects">
             <h1>What I've Worked On</h1>
             <div class="projects-list">
+
                 <!-- Project card 1 -->
                 <div class="project-card">
                     <div class="project-header">
@@ -81,9 +82,10 @@
                             <img src="./resources/WebSec.PNG" alt="Screenshot of Web Security App Homepage">
                         </div>
                         <p><a href="./resources/ProjectPoster.pdf" target="_blank">View Project Poster</a></p>
-                        <a href="" target="_blank">View on GitHub</a>
+                        <a href="https://github.com/MannyR52/web-application-security-project" target="_blank">View on GitHub</a>
                     </div>
                 </div>
+
                 <!-- Project card 2 -->
                 <div class="project-card">
                     <div class="project-header">
@@ -93,9 +95,14 @@
                     <div class="project-details">
                         <h4>Built with: Python, Flask, HTML, CSS, SQL</h4>
                         <p>Description: An application designed to serve as the administrator portal for a winery's inventory and sales management.</p>
-                        <a href="" target="_blank">View on GitHub</a>
+                        <div class="project-screenshots">
+                            <img src="./resources/WineryUI.png" alt="Winery Database UI screenshot">
+                        </div>
+                        <p><a href="./resources/WineryProject.pdf">View Project Report</a></p>
+                        <a href="https://github.com/MannyR52/Winery-Database" target="_blank">View on GitHub</a>
                     </div>
                 </div>
+
                 <!-- Project card 3 -->
                 <div class="project-card">
                     <div class="project-header">
@@ -105,18 +112,28 @@
                     <div class="project-details">
                         <h4>Built with: Python, Flask, HTML, CSS, SQL</h4>
                         <p>Description: A fitness application focused around microservices architecture and RESTful APIs.</p>
-                        <a href="" target="_blank">View on GitHub</a>
+                        <div class="project-screenshots">
+                            <img src="./resources/FitnessApp1.png">
+                            <img src="./resources/FitnessApp2.png">
+                        </div>
+                        <a href="https://github.com/MannyR52/CS-361-Final-Project" target="_blank">View on GitHub</a>
                     </div>
                 </div>
             </div>
 
         </section>
 
+        <!-- Section 3 CURRENT -->
         <section class="in-progress">
             <h1>What I'm Working On</h1>
-
+                <ul>
+                    <li>📚 Studying for <strong>CompTIA Security + Certification</strong></li>
+                    <li>💻 Reviewing <strong>Data Structures & Algortihms</strong></li>
+                    <li>☁️ Exploring <strong>Cloud Engineering & Security with AWS</strong></li>
+                </ul>
         </section>
     </main>
+    <!-- Dropdown Project Cards JS Script -->
     <script>
         const cards = document.querySelectorAll('.project-card');
 
@@ -131,5 +148,8 @@
             });
         });
     </script>
+    <footer>
+        <p>&copy; 2025 Manny Ramirez. All Rights Reserved. </p>
+    </footer>
 </body>
 </html>
